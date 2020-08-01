@@ -1,0 +1,31 @@
+.encabezado {
+  height: 4rem;
+}
+.grupos {
+  height: 50rem;
+  border: 1px solid orange;
+}
+.principal {
+  height: 50rem;
+  border: 1px solid orange;
+}
+.publicaciones {
+  height: 50rem;
+  border: 1px solid orange;
+}
+.noticias {
+  height: 50rem;
+  border: 1px solid orange;
+}
+.chat-ppal {
+  height: 50rem;
+  border: 1px solid orange;
+}
+.actividades-recientes {
+  height: 25rem;
+  border: 1px solid orange;
+}
+.chat {
+  height: 25rem;
+  border: 1px solid orange;
+}
