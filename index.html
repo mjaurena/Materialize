@@ -5,34 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen, projection">
-    <link rel="stylesheet" href="css/app.css" media="screen" charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="css/app.css" type="text/css" media="screen, projection">
+    <title>Materialize</title>
   </head>
   <body>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
     <div class="row">
       <div class="col s12 orange lighten-3 black-text encabezado">
-        Barra encabezado y busqueda
+        <img class="responsive-img logo" src="img/logo.png" alt="logo-huma" title="logo-huma">
       </div>
-      <div class="row">
-        <div class="col s2 m2 l2 lime lighten-3 black-text grupos push-s10">
-          Grupos
-        </div>
-        <div class="col s10 m7 l7 lime lighten-3 black-text principal pull-s2">
-          <div class="row">
-            <div class="col s12 m12 l8 publicaciones  light-green lighten-3 black-text">Publicaciones</div>
-            <div class="col l3 offset-l1 hide-on-med-and-down noticias  light-green lighten-3 black-text">Noticias</div>
+      <div class="col s2 m2 l2 lime lighten-4 grupos push-s10">
+          <span>Grupos</span>
+      </div>
+      <div class="col s10 m7 l7 lime lighten-4 black-text principal z-depth-3 pull-s2">
+        <div class="row">
+          <div class="col s12 m12 l8 publicaciones light-green lighten-3">
+            <div class="card light-green lighten-3 black-text publ_nueva">
+              <h5>Publicaciones</h5>
+            </div>
+            <div class="card light-green lighten-3 black-text publ">
+              <div class="row contenido_publ">
+                <div class="col s12">
+                  <video src="img/colecta.mp4" class="responsive-video" controls>
+                </div>
+              </div>
+            </div>
+            <div class="card light-green lighten-3 black-text publ">
+              <div class="row contenido_publ">
+                <div class="col s12">
+                  <p class="flow-text">
+                    "huma" -Colectivo Humanitario- quiere compartir con todos sus miembros y seguidores una iniciativa que nos llena de orgullo!!! L@s coordinador@s de los centros barriales están diseñando los Sitios Web de cada Núcleo. Sin duda, una poderosa herramienta para estar más cerca de la gente. Esto es el resultado de la capacitación que están llevando a cabo como "desarrollador@s Web" Adelante!!!!
+                  <blockquote>RECORDATORIO para tod@s l@s que deseen colaborar con la "Colecta para el Día del Niño": Estaremos desde el 01/08 hasta el 12/08 en Washington 72, de 13:00 a 18:00 hs. ¡¡¡L@s esperamos!!!</blockquote></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 offset-l1 hide-on-med-and-down noticias  light-green lighten-3 black-text">
+            <div class="card light-green lighten-3 black-text col_noticias center-align">
+              <h5>Últimas Noticias</h5>
+              <div>
+                <img class="responsive-img" src="img/apoyo_escolar.png" alt="apoyo_escolar" title="apoyo_escolar">
+                <p class="truncate">"Espacio para la niñez",Barrio "Los eucaliptus", en el que todas las tardes, l@s niñ@s pasan aproximadamente cuatro horas mientras sus padres y madres se encuentran trabajando. Se los acompaña en las tareas escolares, practican deporte y música.</p>
+              </div>
+              <div>
+                <img class="responsive-img" src="img/COVID.png" alt="COVID" title="COVID">
+                <p class="truncate">COVID 19: Recorrida por los tres barrios de nuestra comunidad, informando acerca de las medidas de higiene y de prevención necesarias</p>
+              </div>
+              <div>
+                <img class="responsive-img" src="img/capacitacion.png" alt="capacitación" title="capacitación">
+                <p class="truncate">Capacitación virtual. El Comité Directivo del Rotary Club Argentina, Sede La Plata, brindó una capacitación acerca de "Respaldo Legal en el trabajo con niñas niños y adolescentes"</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col s3 hide-on-small-only yellow lighten-2 chat-ppal">
-          <div class="row">
-            <div class="col s12 red actividades-recientes">Actividades recientes</div>
-            <div class="col s12 green lighten-2 chat">Chat</div>
+      </div>
+      <div class="col m3 l3 hide-on-small-only yellow lighten-2 chat-ppal">
+        <div class="row">
+          <div class="col s12 lime lighten-4 actividades-recientes">
+            <h5>Actividades recientes</h5>
+          </div>
+          <div class="col s12 green lighten-2 chat">
+            <h5>Chat</h5>
           </div>
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
   </body>
 
 </html>
