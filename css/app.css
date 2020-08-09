@@ -1,31 +1,64 @@
 .encabezado {
   height: 4rem;
 }
+h5 {
+  color: #1b5e20;
+  text-align: center;
+}
 .grupos {
-  height: 50rem;
-  border: 1px solid orange;
+  height: 100rem;
 }
 .principal {
-  height: 50rem;
-  border: 1px solid orange;
+  height: 100rem;
 }
 .publicaciones {
-  height: 50rem;
-  border: 1px solid orange;
+  height: 100rem;
 }
 .noticias {
-  height: 50rem;
-  border: 1px solid orange;
+  height: 100rem;
+  padding: 0 !important;
 }
 .chat-ppal {
   height: 50rem;
-  border: 1px solid orange;
+  padding: 0 !important;
 }
 .actividades-recientes {
-  height: 25rem;
-  border: 1px solid orange;
+  height: 50rem;
 }
 .chat {
-  height: 25rem;
-  border: 1px solid orange;
+  height: 50rem;
+}
+.publ_nueva {
+  height: 7rem;
+}
+.publ {
+  padding: 2rem;
+}
+.logo {
+  margin-top: 0.5rem;
+  max-height: 80%;
+}
+.publ video {
+  max-height: 85%;
+}
+.publ p {
+  font-size: 1rem;
+  width: 100%;
+}
+.col_noticias {
+  height: 98rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+.col_noticias img {
+  border-radius: 5px;
+  border: 0.6rem solid #ffcc80;
+}
+.grupos {
+  color: #1b5e20;
+  text-align: center;
+}
+.publ video {
+  border-radius: 5px;
+  border: 0.6rem solid #ffcc80;
 }
