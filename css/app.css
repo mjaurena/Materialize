@@ -1,64 +1,133 @@
 .encabezado {
   height: 4rem;
 }
-h5 {
-  color: #1b5e20;
-  text-align: center;
-}
-.grupos {
-  height: 100rem;
-}
-.principal {
-  height: 100rem;
-}
-.publicaciones {
-  height: 100rem;
-}
-.noticias {
-  height: 100rem;
-  padding: 0 !important;
-}
-.chat-ppal {
-  height: 50rem;
-  padding: 0 !important;
-}
-.actividades-recientes {
-  height: 50rem;
-}
-.chat {
-  height: 50rem;
-}
-.publ_nueva {
-  height: 7rem;
-}
-.publ {
-  padding: 2rem;
+.col_logo_buscar {
+  height: 4rem;
 }
 .logo {
   margin-top: 0.5rem;
   max-height: 80%;
+  float:left;
 }
+.busqueda {
+  float: left;
+  margin-left: 1rem;
+  width: 65%;
+}
+.busqueda i {
+  font-size: 1.5rem;
+  color: red;
+}
+#buscar::placeholder {
+  color: red !important;
+  font-size: 1.3rem;
+  border-bottom: 1px solid red;
+}
+.botones_barnav {
+  margin-top: 1rem;
+}
+.botones_barnav a {
+  float: right;
+  margin-left: 1rem;
+}
+
+
+h5 {
+  color: #1b5e20;
+  text-align: center;
+}
+
+
+.grupos {
+  min-height: 50rem;
+}
+a span {
+  color: red;
+  text-align: left;
+}
+a p {
+  color: #1b5e20;
+  text-align: left;
+}
+
+
+.principal {
+  min-height: 50rem;
+}
+
+
+.publicaciones {
+  min-height: 50rem;
+}
+
+
+.publ_nueva {
+  height: 12rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#titulo_publ_nueva {
+  font-size: 1.3rem;
+  color: red;
+}
+#texto_publ_nueva {
+  background-color: #fdd835;
+  border-radius: 5px;
+  border-color: #fdd835;
+  height: 6rem;
+}
+form a {
+  margin-left: 1rem;
+  height: 20%;
+}
+
+
 .publ video {
-  max-height: 85%;
+  border-radius: 5px;
+  border: 0.6rem solid #fdd835;
 }
 .publ p {
   font-size: 1rem;
   width: 100%;
 }
+.cierre {
+  color: yellow;
+}
+
+
+.noticias {
+  min-height: 50rem;
+  padding: 0 !important;
+}
 .col_noticias {
-  height: 98rem;
+  min-height: 48rem;
   padding: 0.5rem;
   margin-top: 1rem;
 }
 .col_noticias img {
   border-radius: 5px;
-  border: 0.6rem solid #ffcc80;
+  border: 0.6rem solid #fdd835;
 }
-.grupos {
-  color: #1b5e20;
-  text-align: center;
+
+
+.chat-ppal {
+  min-height: 50rem;
 }
-.publ video {
-  border-radius: 5px;
-  border: 0.6rem solid #ffcc80;
+.actividades-recientes {
+  height: 25rem;
+  overflow: scroll;
+}
+li h5 {
+  color: white !important;
+}
+.chat {
+  height: 25rem;
+  overflow: scroll;
+}
+
+
+@media (max-width:600px){
+  .grupos{
+    padding: 0 !important;
+  }
 }

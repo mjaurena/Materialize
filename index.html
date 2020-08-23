@@ -2,43 +2,119 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen, projection">
-    <link rel="stylesheet" href="css/app.css" type="text/css" media="screen, projection">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen, projection"/>
+    <link href="css/customColors.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="css/app.css" type="text/css" media="screen, projection"/>
     <title>Materialize</title>
   </head>
+
   <body>
     <div class="row">
-      <div class="col s12 orange lighten-3 black-text encabezado">
-        <img class="responsive-img logo" src="img/logo.png" alt="logo-huma" title="logo-huma">
-      </div>
-      <div class="col s2 m2 l2 lime lighten-4 grupos push-s10">
-          <span>Grupos</span>
-      </div>
-      <div class="col s10 m7 l7 lime lighten-4 black-text principal z-depth-3 pull-s2">
+
+      <div class="col s12 yellow darken-1 black-text encabezado">
         <div class="row">
-          <div class="col s12 m12 l8 publicaciones light-green lighten-3">
-            <div class="card light-green lighten-3 black-text publ_nueva">
-              <h5>Publicaciones</h5>
-            </div>
-            <div class="card light-green lighten-3 black-text publ">
-              <div class="row contenido_publ">
-                <div class="col s12">
-                  <video src="img/colecta.mp4" class="responsive-video" controls>
-                </div>
-              </div>
-            </div>
-            <div class="card light-green lighten-3 black-text publ">
-              <div class="row contenido_publ">
-                <div class="col s12">
-                  <p class="flow-text">
-                    "huma" -Colectivo Humanitario- quiere compartir con todos sus miembros y seguidores una iniciativa que nos llena de orgullo!!! L@s coordinador@s de los centros barriales están diseñando los Sitios Web de cada Núcleo. Sin duda, una poderosa herramienta para estar más cerca de la gente. Esto es el resultado de la capacitación que están llevando a cabo como "desarrollador@s Web" Adelante!!!!
-                  <blockquote>RECORDATORIO para tod@s l@s que deseen colaborar con la "Colecta para el Día del Niño": Estaremos desde el 01/08 hasta el 12/08 en Washington 72, de 13:00 a 18:00 hs. ¡¡¡L@s esperamos!!!</blockquote></p>
-                </div>
-              </div>
+          <div class="col s12 m8 l5 yellow darken-1 col_logo_buscar">
+            <img class="responsive-img logo" src="img/logo.png" alt="logo-huma" title="logo-huma">
+            <div class="input-field busqueda">
+              <input type="text" name="buscar" id="buscar" placeholder="Buscar...">
+              <i class="material-icons prefix">search</i>
             </div>
           </div>
+          <div class="col m4 l4 offset l3 hide-on-small-only yellow darken-1 botones_barnav">
+            <a class="btn-floating btn-small red waves-effect"><i class="material-icons">login</i></a>
+            <a class="btn-floating btn-small red waves-effect"><i class="material-icons">notification_important</i></a>
+            <a class="btn-floating btn-small red waves-effect"><i class="material-icons">archive</i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s2 m2 l2 lime lighten-4 grupos push-s10">
+        <div class="collection">
+          <a href="#" class="collection-item avatar">
+            <img src="img/accem.png" alt="" class="circle">
+            <span class="title hide-on-med-and-down">Accem</span>
+            <p class="hide-on-med-and-down">200 miembros</p>
+          </a>
+          <a href="#" class="collection-item avatar">
+            <img src="img/andina.png" alt="" class="circle">
+            <span class="title hide-on-med-and-down">Andina</span>
+            <p class="hide-on-med-and-down">350 miembros</p>
+          </a>
+          <a href="#" class="collection-item avatar">
+            <img src="img/camino.png" alt="" class="circle">
+            <span class="title hide-on-med-and-down">Camino</span>
+            <p class="hide-on-med-and-down">500 miembros</p>
+          </a>
+          <a href="#" class="collection-item avatar">
+            <img src="img/caritas.png" alt="" class="circle">
+            <span class="title hide-on-med-and-down">Cáritas</span>
+            <p class="hide-on-med-and-down">460 miembros</p>
+          </a>
+          <a href="#" class="collection-item avatar">
+            <img src="img/naciones_unidas.png" alt="" class="circle">
+            <span class="title hide-on-med-and-down">Nac.Unidas</span>
+            <p class="hide-on-med-and-down">150 miembros</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col s10 m7 l7 lime lighten-4 black-text principal z-depth-3 pull-s2">
+
+        <div class="row">
+
+          <div class="col s12 m12 l8 publicaciones light-green lighten-3">
+
+            <div class="card light-green lighten-3 publ_nueva">
+              <div card-content>
+                <span id="titulo_publ_nueva">Escribe una nueva publicación</span>
+                <form>
+                  <textarea id="texto_publ_nueva"></textarea>
+                  <a href="#" class="btn-floating btn-small green darken-4 waves-effect white-text"><i class="material-icons">code</i></a>
+                  <a href="#" class="btn-floating btn-small green darken-4 waves-effect white-text"><i class="material-icons">create</i></a>
+                  <a href="#" class="btn-floating btn-small green darken-4 waves-effect white-text"><i class="material-icons">mic</i></a>
+                  <button class="btn-flat btn-small green darken-4 waves-effect white-text right hide-on-small-only" type="submit" name="action"><i class="material-icons right">send</i></button>
+                  <button class="btn-floating btn-small green darken-4 waves-effect white-text right hide-on-med-and-up" type="submit" name="action"><i class="material-icons right">send</i></button>
+                </form>
+              </div>
+            </div>
+
+            <div class="card light-green lighten-3 black-text publ">
+              <div class="card-content green darken-4 white-text">
+                <span class="card-title activator">Núncleo Secu 1<i class="material-icons right">more_vert</i></span>
+                <p>Exitosa colecta por el "Día de las Infancias" en los 11 núcleos</p>
+              </div>
+              <div class="card-image">
+                <span class="card-title">En Secu 1</span>
+                <video src="img/colecta.mp4" class="responsive-video" controls></video>
+              </div>
+              <div class="card-reveal green darken-4 yellow-text">
+                <span class="card-title">Núcleo Secu 1<i class="material-icons right cierre">close</i></span>
+                <p>Durante este mes se realiza la colecta anual por el "Día de las Infancias" en todos los Núcleos. Aquí: Núcleo "Secu 1" -Washington 72-</p>
+              </div>
+            </div>
+
+            <div class="card light-green lighten-3 publ">
+              <div class="card-content green darken-4 white-text">
+                <span class="card-title activator">"huma" Dpto. de Comunicación<i class="material-icons right">more_vert</i></span>
+                  <p class="flow-text">
+                    "huma" -Colectivo Humanitario- quiere compartir con todos sus miembros y seguidores una iniciativa que nos llena de orgullo!!! L@s coordinador@s de los centros barriales están diseñando los Sitios Web de cada Núcleo. Sin duda, una poderosa herramienta para estar más cerca de la gente. Esto es el resultado de la capacitación que están llevando a cabo como "desarrollador@s Web" Adelante!!!!
+                  </p>
+                  <blockquote>
+                    RECORDATORIO para tod@s l@s que deseen colaborar con la "Colecta por el Día de las Infancias": Estaremos desde el 01/08 hasta el 31/08 en Washington 72, de 13:00 a 18:00 hs. ¡¡¡L@s esperamos!!!
+                  </blockquote>
+                </div>
+                <div class="card-reveal green darken-4 yellow-text">
+                  <span class="card-title">Sitios Web ¡¡¡INVITACIÓN!!!<i class="material-icons right cierre">close</i></span>
+                  <p class="flow-text">
+                    Como les informamos, l@s coordinador@s se encuentran diseñando los sitios web de los Núcleos. Invitamos a comercios y empresas locales a publicitar en los mismos. Será una gran oportunidad para llegar a cientos de seguidores de nuestro Colectivo Humanitario. Comuníquense!!!!!
+                  </p>
+                </div>
+            </div>
+
+          </div>
+
           <div class="col l3 offset-l1 hide-on-med-and-down noticias  light-green lighten-3 black-text">
             <div class="card light-green lighten-3 black-text col_noticias center-align">
               <h5>Últimas Noticias</h5>
@@ -56,21 +132,105 @@
               </div>
             </div>
           </div>
+
         </div>
+
       </div>
-      <div class="col m3 l3 hide-on-small-only yellow lighten-2 chat-ppal">
+
+      <div class="col m3 l3 hide-on-small-only chat-ppal">
+
         <div class="row">
+
           <div class="col s12 lime lighten-4 actividades-recientes">
-            <h5>Actividades recientes</h5>
+
+            <ul class="collection with-header avatar">
+              <li class="collection-header red darken-4 white-text"><h5>Actividades Recientes</h5></li>
+
+              <li class="collection-item avatar red darken-4 white-text">
+                <i class="material-icons circle green lighten-2">comment</i>
+                <span class="title">Consejo Chascomús</span>
+                <p>hizo un comentario</p>
+              </li>
+
+              <li class="collection-item avatar red darken-4 white-text">
+                <i class="material-icons circle green lighten-2">group</i>
+                <span class="title">Andina</span>
+                <p>tiene novedades del grupo</p>
+              </li>
+
+              <li class="collection-item avatar red darken-4 white-text">
+                <i class="material-icons circle green lighten-2">notifications</i>
+                <span class="title">Secu 1</span>
+                <p>envió notificaciones a la casilla</p>
+              </li>
+
+              <li class="collection-item avatar red darken-4 white-text">
+                <i class="material-icons circle green lighten-2">schedule</i>
+                <span class="title">Rotary Club La Plata</span>
+                <p>notifica día y hora reunión virtual</p>
+              </li>
+
           </div>
-          <div class="col s12 green lighten-2 chat">
-            <h5>Chat</h5>
+
+          <div class="col s12 chat">
+
+            <ul class="collection with-header">
+              <li class="collection-header red darken-4"><h5>Chat</h5></li>
+
+              <li class="collection-item red darken-4">
+                <div class="chip"><img src="img/persona1.png">Carla17</div>
+              </li>
+              <li class="collection-item red darken-4">
+                <div class="chip"><img src="img/persona2.png">Esteban1977</div>
+              </li>
+              <li class="collection-item red darken-4">
+                <div class="chip"><img src="img/persona3.png">Aux_Celeste</div>
+              </li>
+              <li class="collection-item red darken-4">
+                <div class="chip"><img src="img/persona4.png">Rodolfo_ing</div>
+              </li>
+              <li class="collection-item red darken-4">
+                <div class="chip"><img src="img/persona5.png">Daniel_1988</div>
+              </li>
+              <li class="collection-item red darken-4">
+                <div class="chip"><img src="img/persona6.png">Carlos_II</div>
+              </li>
+              <li class="collection-item red darken-4">
+                <div class="chip"><img src="img/persona7.png">2020Maria</div>
+              </li>
+              <li class="collection-item red darken-4">
+                <div class="chip"><img src="img/persona8.png">Rodriguez_Callejero</div>
+              </li>
+            </ul>
+
           </div>
+
         </div>
+
       </div>
+
+      <div class="fixed-action-btn hide-on-small-only" style="bottom: 45px; right: 90vw;">
+        <a href="#" class="btn-floating btn-large red">
+          <i class="material-icons large red darken-4">build</i>
+        </a>
+        <ul>
+          <li><a href="#" class="btn-floating blue"><i class="material-icons">add_a_photo</i></a></li>
+          <li><a href="#" class="btn-floating grey"><i class="material-icons">email</i></a></li>
+          <li><a href="#" class="btn-floating orange"><i class="material-icons">event</i></a></li>
+          <li><a href="#" class="btn-floating red"><i class="material-icons">share</i></a></li>
+        </ul>
+      </div>
+
+
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.fixed-action-btn');
+  var instances = M.FloatingActionButton.init(elems,);
+});
+    </script>
   </body>
 
 </html>
